@@ -1,0 +1,61 @@
+﻿<Window x:Class="SMC_Client_Expanded.wpf_newPolice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMC_Client_Expanded"
+        mc:Ignorable="d"
+        Title="" Height="500" Width="740"  WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Images\background.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Background="#B2FFD700" Foreground="White" Content="Регистрация нового полиса" FontSize="26" Grid.Column="1" HorizontalAlignment="Left" Width="366"/>
+        <Button x:Name="bt_exit" Grid.Column="2" Foreground="White" Background="#B2FFD700" Content="Назад" FontSize="26" Grid.Row="1" HorizontalAlignment="Right" Width="122" Click="bt_exit_Click"/>
+        <Button x:Name="bt_register" Grid.Column="1" Foreground="White" FontSize="20" Background="#B2FFD700" Grid.Row="11" Content="Зарегистрировать" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="196" Click="bt_register_Click"/>
+        <Button Foreground="White" Background="#B2FFD700" Content="Паспорт" Grid.Column="1" Grid.Row="8" FontSize="26" Margin="126,0,0,0" HorizontalAlignment="Left" Width="114"/>
+        <Label Foreground="White" Content="Номер полиса" FontSize="26" Grid.Row="1" HorizontalAlignment="Right" Width="182"/>
+        <Label Foreground="White" Content="Фамилия" FontSize="26" Grid.Row="2" HorizontalAlignment="Right" Width="116"/>
+        <Label Foreground="White" Content="Имя" FontSize="26" Grid.Row="3" HorizontalAlignment="Right" Width="58"/>
+        <Label Foreground="White" Content="Отчество" FontSize="26" Grid.Row="4" HorizontalAlignment="Right" Width="121"/>
+        <Label Foreground="White" Content="Дата Рождения" FontSize="26" Grid.Row="5" HorizontalAlignment="Right" Width="192"/>
+        <Label Foreground="White" Content="Телефон" FontSize="26" Grid.Row="6" HorizontalAlignment="Right" Width="116"/>
+        <Label Foreground="White" Content="Поликлиника" FontSize="26" Grid.Row="7" HorizontalAlignment="Right" Width="172"/>
+        <Label Foreground="White" Content="Серия" FontSize="26" Grid.Row="9" HorizontalAlignment="Right" Width="83"/>
+        <Label Foreground="White" Content="Номер" FontSize="26" Grid.Row="10" HorizontalAlignment="Right" Width="90"/>
+        <Label Foreground="White" Content="Кем выдан" FontSize="26" Grid.Row="11" HorizontalAlignment="Right" Width="137"/>
+        <Label Foreground="White" Content="Когда выдан" FontSize="26" Grid.Row="12" HorizontalAlignment="Right" Width="158"/>
+        <TextBox x:Name="tb_policyNumber" Grid.Column="1" Grid.Row="1" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_lastName" Grid.Column="1" Grid.Row="2" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_firstName" Grid.Column="1" Grid.Row="3" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_middleName" Grid.Column="1" Grid.Row="4" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_birthday" Grid.Column="1" Grid.Row="5" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_phone" Grid.Column="1" Grid.Row="6" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_policlinicName" Grid.Column="1" Grid.Row="7" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_series" Grid.Column="1" Grid.Row="9" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_number" Grid.Column="1" Grid.Row="10" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_who" Grid.Column="1" Grid.Row="11" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+        <TextBox x:Name="tb_when" Grid.Column="1" Grid.Row="12" Background="LightCyan" Foreground="ForestGreen" FontSize="16" Margin="0,10"/>
+
+    </Grid>
+</Window>

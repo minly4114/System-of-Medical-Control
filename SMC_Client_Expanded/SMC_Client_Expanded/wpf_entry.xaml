@@ -1,0 +1,54 @@
+﻿<Window x:Class="SMC_Client_Expanded.wpf_entry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMC_Client_Expanded"
+        mc:Ignorable="d"
+        Title="" Height="930.6" Width="1300" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Images\background.png"/>
+    </Window.Background>
+    <Grid RenderTransformOrigin="0.53,0.5" HorizontalAlignment="Left" Width="1290" Height="1063" VerticalAlignment="Top" Margin="0,0,0,-162">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="ll_login" Grid.Column="4" Margin="15,56,0,78" Grid.Row="1" HorizontalAlignment="Left" Width="235">
+            <TextBlock Text="Логин" Foreground="White" FontSize="60" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,0,0" Height="84"/>
+        </Label>
+        <Label x:Name="ll_pass" Grid.Row="2" Grid.Column="4" Margin="5,40,5,95">
+            <TextBlock Text="Пароль" Foreground="White" FontSize="60" Width="235" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,0,0" RenderTransformOrigin="0.917,0.475"/>
+        </Label>
+        <TextBox x:Name="tb_login" Grid.Column="5" Grid.Row="1" Background="LightCyan" Foreground="ForestGreen" FontSize="48" Margin="0,56,0,78" HorizontalAlignment="Right" Width="313"/>
+        <TextBox x:Name="tb_pass" Grid.Column="5" Grid.Row="2" Background="LightCyan" Foreground="ForestGreen" FontSize="48" Margin="0,40,0,95" HorizontalAlignment="Right" Width="313"/>
+        <Image x:Name="flover" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="636" Margin="0,43,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="394" Source="Images\flover.png" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="bt_entry" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="63" Margin="54,150,0,0" Grid.Row="2" VerticalAlignment="Top" Width="189" Click="bt_entry_Click_" >
+            <Button.Background>
+                <ImageBrush ImageSource="Images\petalRight.png"/>
+            </Button.Background>
+            <TextBlock Text="Войти" Foreground="ForestGreen" FontSize="40">
+
+            </TextBlock>
+        </Button>
+        <Button x:Name="bt_exit" Grid.ColumnSpan="2" Grid.Column="1" Height="63" Margin="72,42,169,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Click="bt_exit_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Images\petalLeft.png"/>
+            </Button.Background>
+            <TextBlock Text="Назад" Foreground="ForestGreen" FontSize="40">
+
+            </TextBlock>
+        </Button>
+    </Grid>
+</Window>

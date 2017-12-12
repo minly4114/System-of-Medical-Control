@@ -1,0 +1,53 @@
+﻿<Window x:Class="SMC_Client_Desktop.mainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMC_Client_Desktop"
+        mc:Ignorable="d"
+        Height="1080" Width="1920" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/welcomebg.png"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="186*"/>
+            <ColumnDefinition Width="357*"/>
+            <ColumnDefinition Width="819*"/>
+            <ColumnDefinition Width="259*"/>
+            <ColumnDefinition Width="246*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="ExitButton" Grid.Column="5" Margin="0,24,19.6,0" VerticalAlignment="Top" Height="120" HorizontalAlignment="Right" Width="140" BorderThickness="0" Click="ExitButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/door.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="AdmissionButton" Margin="11.6,300,0,0" VerticalAlignment="Top" Height="120" BorderThickness="0" Click="AdmissionButton_Click" Grid.Column="1" HorizontalAlignment="Left" Width="140">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/stickmans.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Главное меню" Foreground="White" FontSize="70" Grid.Column="3" Margin="126.2,60,0,0" Height="104" VerticalAlignment="Top" Width="575" HorizontalAlignment="Left"/>
+
+        <Button x:Name="createAdmissionBT" Margin="11.6,576,0,0" VerticalAlignment="Top" Height="120" BorderThickness="0" Click="createAdmission_Click" Grid.Column="1" HorizontalAlignment="Left" Width="140">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/book.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Gold" BorderThickness="1" Grid.Column="2" HorizontalAlignment="Left" Height="72" Margin="31,326,0,0" VerticalAlignment="Top" Width="390" Background="#99FFD700" Grid.ColumnSpan="2"/>
+
+        <Border BorderBrush="Gold" BorderThickness="1" Grid.Column="2" HorizontalAlignment="Left" Height="72" Margin="31,590,0,0" VerticalAlignment="Top" Width="390" Background="#99FFD700" Grid.ColumnSpan="2"/>
+        <Label Content="Мои направления" Foreground="White" FontSize="40" Grid.Column="2" Margin="47,333,0,0" Height="65" VerticalAlignment="Top" Width="371" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
+
+        <Label Content="Запись к врачу" Foreground="White" FontSize="40" Grid.Column="2" Margin="79,597,0,0" Height="65" VerticalAlignment="Top" Width="342" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
+        <Button x:Name="editAdmissions" Margin="11.6,437,0,0" VerticalAlignment="Top" Height="120" BorderThickness="0" Click="editAdmissions_Click" Grid.Column="1" HorizontalAlignment="Left" Width="140">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/arrow.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Gold" BorderThickness="1" Grid.Column="2" HorizontalAlignment="Left" Height="72" Margin="28,460,0,0" VerticalAlignment="Top" Width="390" Background="#99FFD700" Grid.ColumnSpan="2"/>
+        <Label Content="Просмотр записей" Foreground="White" FontSize="40" Grid.Column="2" Margin="47,460,0,0" Height="65" VerticalAlignment="Top" Width="371" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
